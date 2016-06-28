@@ -25,6 +25,9 @@ function generateAndCheckGuess(guess) {
   }
 }
 
+function gameOver() {
+  return player.bankroll <= 0;
+};
 
 $(document).ready(function() {
   $('#player-stats #bank-roll').html(player.bankroll);
@@ -36,6 +39,9 @@ $(document).ready(function() {
     generateAndCheckGuess(guess);
     console.log('You now have $' + player.bankroll);
     $('#player-stats #bank-roll').html(player.bankroll);
+    if (gameOver()) {
+      $('#game-over').html('<p>GAME OVER! YOU LOST ALL YOUR MONEY</p>'); 
+    }
   });
 
 //var keepPlaying = true;
