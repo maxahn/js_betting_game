@@ -19,3 +19,7 @@ input {
 #close-guess {
   color: yellow;
 }
+
+#game-over {
+  color: red;
+}
