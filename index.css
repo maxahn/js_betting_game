@@ -1,0 +1,21 @@
+body {
+  text-align: center;
+  margin: 40px;
+  font-family: arial;
+}
+
+input {
+  margin: 5px;
+  padding: 5px;
+}
+
+#correct-guess {
+  color: green;
+}
+
+#incorrect-guess {
+  color: red;
+}
+#close-guess {
+  color: yellow;
+}

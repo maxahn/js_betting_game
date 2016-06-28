@@ -1,8 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src='jquery-3.0.0.min.js'></script>
     <script src='application.js'></script>
+    <link rel='stylesheet' type='text/css' href='index.css'/>
   </head>
   <body>
+
+    <h3>Player Stats</h3>
+    <div id='player-stats'>
+      <strong>Bankroll:</strong> 
+      <div id='bank-roll'>
+      </div>
+    </div>
+    <form>
+      Bet amount (between 5 and 10):<br> <!-- look up how to implement contenteditable with data types-->
+      <input type='text' name='bet'/><br>
+      Guess (between 1 and 10):<br> 
+      <input type='text' name='guess'/><br>
+      <input type='submit' id='submit-button'/>
+    </form>
+
+    <div id='results'>
+
+    </div>
   </body>
 </html>
